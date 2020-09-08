@@ -1,5 +1,5 @@
 body {
-    background-color: #FFD700;
+    background-color: #FED758;
     font-family: 'Source Code Pro', monospace;
     border: #800000;
     border-width: 10px;
@@ -9,6 +9,16 @@ h1 {
     color: #800000;
     font-size: 50px;
     margin-bottom: 100px;
+}
+
+img {
+    border-style: ridge;
+    border-color: #800000;
+    border-radius: 50%;
+    width: 150px;
+    position: relative;
+    bottom: 180px;
+    left: 1100px;
 }
 
 h2 {
