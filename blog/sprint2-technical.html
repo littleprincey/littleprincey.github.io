@@ -12,40 +12,77 @@
       <h3>
           relative, absolute, fixed! very cool words, in philosophy, but what do they mean when we are building a website using HTML?
       </h3>
-      <div><p>
+      <div>
+        <p>
         when you’re being cool and making a website, using html, there will be times when you want to arrange certain aspects of your page (like an image) in a specific way. 
-        there is a default ‘flow’ or layout in html where the elements will display in a sort of linear, top to bottom way according to the html code. if you want to change this flow, you will use the position property in css 
-
-      </p>
-      <p>lets say you want this image of your best friend cow, to position on the top right hand corner of the screen. without position property, it will just display in the logical order of your code and best friend cow will be lost to the flow…</p>
-      <p>there are different types of positioning, depending on what you want to do with your best friend cow. we will be looking at the differences between three types> relative, absolute, and fixed positioning. 
-
-        html default positioning is static, which is the flow described above and what we see when we run pure html with no css positioning!</p></div>
-
+        there is a default ‘flow’ or layout in html where the elements will display in a sort of linear, top to bottom way according to the html code. if you want to change this flow, you will use the position property in css.
+        </p> 
+            lets say you want to display the pictures of your three best cow friends on a website. below, i have done just that. meet the beloved bertha, martha and agatha. what you see in the screenshot below is the default html positioning (the static positioning) of the images. without the css position property, elements will display in the logical order of your html code and your best friend cows will unceremoniously stacked on top of one another, victim to the flow...
+        </p>
+       
         <img class="bestfriendcow" src="/Users/camillasanders/Desktop/devacademyHihi20/foundations/bloggo/littleprincey.github.io/blog/cowstuff4sprint2tech/cowsallinarow.jpeg" alt="screenshot of 3 images of a cow on webpage"></img> 
             <img class="cowhtml" src="cowstuff4sprint2tech/cowhtml.jpeg" alt="screenshot of html code for three cow pics"></img>
             <img class="OGcss" src="cowstuff4sprint2tech/OGcss.jpeg" alt="screenshot of css classes for the cow images"></img>
 
-        <div><h3>relativity! (relative positioning)</h3></div>
+      
+        <p>
+          there are different types of positioning, depending on what you want to do with your best friend cows great pics. we will be looking at the differences between three types> relative, absolute, and fixed positioning, to get them at their best. 
 
-        <p>relative to what?? relative to the default, static position of the element.
-            img {
-            positioning: relative;
-            left: 30px;
-            }
-            this means, the image (of our best friend cow) will be pushed 30px from the left of its original (static) position. so this is why its called ‘relative’ positioning. relative to its static position, you can manipulate/stipulate its new position.</p>
+        </p>
+      </div>
+
+        
         <div>
+            <h3>relativity! (relative positioning)</h3>
+
+        <p>
+            relative to what?? 
+        </p>
+        <p>relative to the default, static position of the element! WHAT HAPPENED TO BERTHA?? check out the css code in the screenshot on the right. 
+            i changed her POSITION property to relative, then using the LEFT property, pushed the image from the left by 40 pixels. 
+            another way of understanding this could be to think of it as creating a margin of space, worth 40 pixels, on the left side which 'pushes' it to the right, by 40px.
+            phew, thats alot, i know. it took me a while to get it. 
+            there are four options when you change the positioning from the default(static) to relative: top, bottom, left and right. 
+            and you can use any or all of these to push your image around the screen, relative to its 'original' or static position.
+        </p>
+        
             <img class="relativecows" src="cowstuff4sprint2tech/relativecows!.jpeg" alt="screenshot of 3 images of a cow on webpage"></img> 
             <img class="relativecss" src="cowstuff4sprint2tech/relativecss.jpeg" alt="screenshot of css code for three cow pics"></img>
         </div>
 
+        <div>
             <h3>absolutely! (absolute positioning)</h3>
 
-            <p></p>
-        <div>
+            <p>
+                there's bertha sitting on martha, riding agatha. wow. there;s alot going on here, lets see is we can understand things a little more clearly.
+                the below screenshot is what happens when we use the absolute positioning property.
+                as you can see, martha moved right on up into bertha's space like she wasnt there. 
+                this is because absolute positioning affects the flow of your html by taking the element out of the flow altogether, as if you've deleted the image.
+            </p>
+            <p>
+                (the image of)best friend cow bertha's positioning is altered relative to the parent element (body element) or in plain language, the big white(in this case) box it's in. if the element is wrapped in a smaller box, it will move in relation to that, as opposed to the body.
+                so as opposed to the above, relative positioning property, 
+                absolute positionings movements are in relation not to its own original/default position, but in relation to the wider context
+                or the parent element. in this case, the parent element is the 'body' element that wraps it. 
+            </p>
+        
             <img class="absolutecows" src="cowstuff4sprint2tech/absolute cows!.jpeg" alt="screenshot of 3 images of a cow on webpage"></img> 
             <img class="absolutecss" src="cowstuff4sprint2tech/absolutecss.jpeg" alt="screenshot of css code for three cow pics"></img>
         </div>  
+        <div>
+            <h3> Ellen, fixa! (fixed positioning)</h3>
+
+            <p>
+                ok, last but most certainly not least, the fixed positioning. have you noticed there's a fourth best friend, as yet unmentioned on this page??
+                it's best friend pig! she remains, no matter how much we scroll, because she's dependable like that. 
+                it's also because she is 'fixed' to the viewpoint. the element, in this case image of friend pig, will not move from that position.
+                this is usually used for navigation bars so you can always have the search thingies handy, but all we need is love, and that's pig.
+            </p>
+            <p>
+                (my actual best friend when i was 6 was a pig until my dad ate her. ive never forgiven him.) 
+            </p>
+        </div>
+
 
 
 
