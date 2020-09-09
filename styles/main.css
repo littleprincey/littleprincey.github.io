@@ -70,3 +70,10 @@ font-size: 18px;
     position: relative;
     left: 350px;
 }
+.piggo {
+    height: 150px;
+    width: 150px;
+    position:fixed;
+    bottom: 600px;
+    left: 960px;
+}
